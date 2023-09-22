@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul.a{
+        list-style-type: square;
+        list-style-position: outside;
+    }
+    ul.b{
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+
+    /*The list-style-type:none property can also be used to remove the markers/bullets.
+     Note that the list also has default margin and padding. 
+    To remove this, add margin:0 and padding:0 to <ul> or <ol>:*/
+
+    }
+    ol.c{
+        list-style-type: upper-roman;
+        background: aqua;
+        padding: 20px;
+    }
+    ol.d{
+        list-style-type: lower-alpha;
+    }
+</style>
+<body>
+    <h>List style type Property </h>
+    <ul class="a">
+        <li>Kochi</li>
+        <li>Bengaluru</li>
+        <li>Chennai</li>
+    </ul>
+    <ul class="b">
+        <li>Delhi</li>
+        <li>Kolkata</li>
+        <li>Lucknow</li>
+    </ul>
+    <ol class="c">
+        <li>Hydrebad</li>
+        <li>Pune</li>
+        <li>Mumbai</li>
+    </ol>
+    <ol class="d">
+        <li>Jammu</li>
+        <li>Punjab</li>
+        <li>Gujarat</li>
+    </ol>
+</body>
+</html>
+
+<!--
+list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)
+list-style-image (specifies an image as the list item marker)
+-->
+
+
