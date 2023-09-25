@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {
+        position: relative;
+    }
+    .topleft{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 18px;
+    }
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+    .bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+    .bottomleft {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 18px;
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px
+        
+    }
+    img {
+        width: 70%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <h>Image Text </h>
+    <div class="container">
+        <img src="india.jpg" alt="India" width="600" height="600"> 
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="center">Centered</div>
+
+    </div>
+</body>
+</html>
