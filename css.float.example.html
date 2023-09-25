@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+    text-align: center;
+    font-size: large;
+    background-color: brown;
+    
+}
+</style>
+</head>
+<body>
+    <h2>RCB</h2>
+    <p>Royal Challengers Banglore</p>
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="vk.jpg" alt="Virat kohli " style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="maxi.jpg" alt="Maxwell" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="abd.jpg" alt="ABD" style="width:100%">
+        </div>
+    </div>
+</body>
+</html>
