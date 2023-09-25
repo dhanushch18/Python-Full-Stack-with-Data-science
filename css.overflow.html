@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        overflow:scroll;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: aquamarine;
+    }
+    .b {
+        overflow: auto;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: brown;
+    }
+</style>
+<body>
+    <h2>Overflow: scroll</h2>
+
+    <p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+
+    <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    
+
+    <h3>Overflow : Auto</h3>
+    <p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+   <div class="b">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</body>
+</html>
+
+<!--
+    CSS Overflow
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+The overflow property has the following values:
+
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary
+-->
