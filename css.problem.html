@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css.Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(32, 231, 207);
+        background-image: url("india.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: fixed;
+    }
+    p{
+        padding: 10px 50px 10px 5px;
+        width: 750px;
+        background-color: rgb(241, 88, 32);
+        margin: 3px solid black;
+        border: 2px dashed black;
+    }
+    h1 {
+        background-color: chartreuse;
+        border: 5px solid red;
+        text-align: center;
+        padding: 50px 75px 50px 75px;
+        width: 350px;
+        font-size: 100px;
+        font-family: serif;
+    }
+    h2{
+        direction: rtl;
+        unicode-bidi: bidi-override;
+        font-style: italic;
+        
+    }
+    a {
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        width: 20px;
+        background-color: burlywood;
+    }
+    table {
+        width: 50%;
+        border-collapse: collapse;
+    }
+    th, td {
+            padding: 8px;
+            text-align: center;
+            border: 2px solid red;
+
+    }
+    
+    tr:hover {background-color: rgb(255, 77, 0);}
+    tr:nth-child(even) {background-color: rgba(242, 215, 215, 0.652);}
+</style>
+<body>
+    <h1>India</h1>
+    <h2>India</h2>
+    <a href="https://en.wikipedia.org/wiki/India">About India</a>
+    <p>India, officially the Republic of India, is a country in South Asia.
+     It is the seventh-largest country by area; the most populous country as of
+     June 2023; and from the time of its independence in 1947, the world's most populous democracy.</p>
+
+    <table>
+        <tr>
+            <th>STATE</th>
+            <th>CAPITAL</th>
+            <th>CITY</th>
+        </tr>
+        <tr>
+            <td>KERALA</td>
+            <td>TRIVANDRUM</td>
+            <td>KOCHI</td>
+        </tr>
+        <tr>
+            <td>TAMIL NADU</td>
+            <td>CHENNAI</td>
+            <td>COIMBATORE</td>
+        </tr>
+        <tr>
+            <td>MAHARASTRA</td>
+            <td>MUMBAI</td>
+            <td>PUNE</td>
+        </tr>
+        <tr>
+            <td>KARNATAKA</td>
+            <td>BANGLORE</td>
+            <td>MANGLORE</td>
+        </tr>
+    </table>
+</body>
+</html>
