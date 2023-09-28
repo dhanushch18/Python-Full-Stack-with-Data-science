@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        text-decoration: none;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+
+    }
+    li a:hover {
+        background-color: orangered;
+    }
+    li a :hover :not(.active) {
+        background-color: rgb(11, 63, 11);
+    }
+    .active {
+        background-color: rgb(31, 116, 12);
+    }
+</style>
+<body>
+    <h1>INDIAN PREMIER LEAGUE</h1>
+    
+    <ul>
+        <li><a  href="https://www.royalchallengers.com/">RCB</a></li>
+        <li><a href="https://www.mumbaiindians.com/">MI</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Chennai_Super_Kings">CSK</a></li>
+        <li><a href="https://www.rajasthanroyals.com/">RR</a></li>
+        <li style="float: right;"><a class="active" href="https://www.iplt20.com/">HOME</a></li>
+    </ul>
+</body>
+</html>
