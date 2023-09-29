@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: gray;
+    }
+    li {
+        float: left;
+        border-right: 1px solid white;
+    }
+    li a, .dropbtn {
+        display: inline-block;
+        text-align: center;
+        color: white;
+        padding: 14px 16px;
+
+    }
+    li a :hover, .dropdown :hover .dropbtn {
+        background-color: red;
+    }
+    li.dropdown {
+        display: inline-block;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+</style>
+</head>
+<body>
+    <ul>
+        <li> <a href="https://www.indiansuperleague.com/">HOME</a></li>
+        <li><a href="https://www.google.com/search?q=isl&rlz=1C1FKPE_enIN1005IN1005&oq=isl&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyDQgBEC4YgwEYsQMYgAQyDQgCEAAYgwEYsQMYigUyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyDQgGEAAYgwEYsQMYigUyDQgHEAAYgwEYsQMYigUyDQgIEAAYgwEYsQMYgAQyBwgJEAAYgATSAQkyMjg5ajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11sk2rspfc;2;/m/0ynr_sq;mt;fp;1;;;">MATCHES</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">TEAMS</a>
+            <div class="dropdown-content">
+                <a href="https://keralablastersfc.in/">KERALA BLASTERS FC</a>
+                <a href="https://www.mumbaicityfc.com/">MUMBAI CITY FC</a>
+                <a href="https://en.wikipedia.org/wiki/Mohun_Bagan_AC">MOHUN BAGAN</a>
+                <a href="https://chennaiyinfc.com/">CHENNAYEEN FC</a>
+                <a href="https://hyderabadfc.co.in/">HYDERABAD FC </a>
+            </div>
+        </li>
+    </ul>
+    <h1>INDIAN SUPER LEAGUE</h1>
+    <h2>ISL</h2>
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu of teams.</p>
+
+</body>
+</html>
