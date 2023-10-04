@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css.Document</title>
+<style>
+.dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+.dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: gray;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+
+    }
+.dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+.dropdown-content a:hover {
+        background-color: aqua;
+    }
+.dropdown:hover .dropdown-content {
+        display: block;
+    }
+.dropdown:hover .dropbtn {
+        background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <h>Alignment dropdown Content</h>
+    <h2>Indian States </h2>
+<div class="dropdown" style="float: left;">
+    <button class="dropbtn">Left</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="https://en.wikipedia.org/wiki/Jammu">JAMMU & KASHMIR</a>
+    <a href="https://en.wikipedia.org/wiki/Haryana">HARYANA</a>
+    <a href="https://en.wikipedia.org/wiki/Punjab,_India">PUNJAB</a>
+    </div>
+</div>
+<div class="dropdown" style="float: right;">
+    <button class="dropbtn">SOUTH</button>
+    <div class="dropdown-content" >
+    <a href="https://en.wikipedia.org/wiki/Kerala">KERALA</a>
+    <a href="https://en.wikipedia.org/wiki/Tamil_Nadu">TAMIL NADU</a>
+    <a href="https://en.wikipedia.org/wiki/Karnataka">KARNATAKA</a>
+    </div>
+</div>
+</body>
+</html>
