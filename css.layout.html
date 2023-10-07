@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    margin: 0;
+    background-color: bisque;
+}
+.header {
+    background-color: gray;
+    padding: 30px;
+    text-align: center;
+}
+.nav{
+    overflow: hidden;
+    background-color: antiquewhite;
+    padding: 40px;
+    text-align: center;
+    
+}
+nav.a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 48px 40px;
+   
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-
+  }width:600px) {
+  .column {
+    width: 100%;
+}
+</style>
+<body>
+    <h1>CSS LAYOUT</h1>
+    <div class="header">
+        <h2>HEADER</h2>
+    </div>
+    <div class="nav">
+        <a href="#">RCB</a>
+        <a href="https://www.mumbaiindians.com/">MI</a>
+        <a href="#">CSK</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>RCB</h3>
+            <p>Royal Challengers Bangalore are a professional franchise cricket team based 
+            in Bengaluru, Karnataka, that plays in the Indian Premier League. It was founded
+             in 2008 by United Spirits and named after the company's liquor brand Royal Challenge.</p>
+        </div>
+        <div class="column">
+            <h3>MI</h3>
+            <p>Mumbai Indians are a professional franchise cricket team based in Mumbai, Maharashtra, 
+                that competes in the Indian Premier League. Founded in 2008, the team is owned by 
+                India's biggest conglomerate, Reliance Industries, through its 100% subsidiary 
+                Indiawin Sports. 
+            </p>
+        </div>
+        <div class="column">
+            <h3>CSK</h3>
+            <p>Chennai Super Kings is a professional cricket franchise based in Chennai, Tamil Nadu, India, 
+                that competes in the Indian Premier League. 
+                Founded in 2008, the team plays its home matches at the M. A. Chidambaram Stadium in Chenna</p>
+        </div>
+    </div>
+</body>
+</html>

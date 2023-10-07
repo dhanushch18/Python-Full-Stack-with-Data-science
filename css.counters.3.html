@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+</style>
+</head>
+<body>
+
+<ol>
+  <li>item</li>
+  <li>item   
+  <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    </li>
+    <li>item</li>
+  </ol>
+  </li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<ol>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+</body>
+</html>
+<!--
+content	Used with the ::before and ::after pseudo-elements, to insert generated content
+counter-increment	Increments one or more counter values
+counter-reset	Creates or resets one or more counters
+counter()	Returns the current value of the named counter
+-->

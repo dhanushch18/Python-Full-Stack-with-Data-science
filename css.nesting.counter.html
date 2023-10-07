@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    counter-reset: section;
+}
+h1{
+    counter-reset: subsection;
+}
+h1::before {
+    counter-increment: section;
+    content: "Section" counter(section)".";
+}
+h2::before {
+    counter-increment: subsection;
+    content:counter(section)"." counter(subsection) " ";
+}
+</style>
+<body>
+    <h1>INDIAN PREMIER LEAGUE</h1>
+    <h2>RCB</h2>
+    <h2>CSK</h2>
+    <h2>MI</h2>
+    <h2>SRH</h2>
+    <h1>INDIAN SUPER LEAGUE</h1>
+    <h2>KERALA BLASTERS</h2>
+    <h2>MOHUN BAGAN</h2>
+    <h2>EAST BENGAL</h2>
+    <h2>BENGALURU FC</h2>
+    <h1>PLAYERS</h1>
+    <h2>VIRAT KOHLI</h2>
+    <h2>CR7</h2>
+    <h2>ABD</h2>
+    <h2>LUNA</h2>
+</body>
+</html>
+<!--
+    Nesting Counters
+The following example creates one counter for the page (section) and one counter
+ for each <h1> element (subsection). The "section" counter will be counted for each
+ <h1> element with "Section <value of the section counter>.", and the "subsection"
+ counter will be counted for each <h2> element with "<value of the
+ section counter>.<value of the subsection counter>":
+-->
