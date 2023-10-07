@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, black);
+}
+#grad2 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>Conic Gradient - Five Colors</h1>
+
+<div id="grad1"></div>
+<p> repeating conic gradient </p>
+<div id="grad2"></div>
+
+</body>
+</html>
+<!--
+    Function	Description
+conic-gradient()	Creates a conic gradient. Define at least two colors (around a center point)
+linear-gradient()	Creates a linear gradient. Define at least two colors (top to bottom)
+radial-gradient()	Creates a radial gradient. Define at least two colors (center to edges)
+repeating-conic-gradient()	Repeats a conic gradient
+repeating-linear-gradient()	Repeats a linear gradient
+repeating-radial-gradient()	Repeats a radial gradient
+-->
