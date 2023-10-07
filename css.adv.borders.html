@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+#borderimg2 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
+}
+#borderimg3{
+    border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% round;
+
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image Property</h1>
+
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+<p id="borderimg2">30 stretch</p>
+<p id="borderimg3">border-image: url(border.png) 30% round;</p>
+</body>
+</html>
+<!--
+border-image	A shorthand property for setting all the border-image-* properties
+border-image-source	Specifies the path to the image to be used as a border
+border-image-slice	Specifies how to slice the border image
+border-image-width	Specifies the widths of the border image
+border-image-outset	Specifies the amount by which the border image area extends beyond the border box
+border-image-repeat	Specifies whether the border image should be repeated, rounded or stretched
+-->
