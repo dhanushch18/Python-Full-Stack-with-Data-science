@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    counter-reset: section;
+    color: red;
+
+}
+h2::before {
+    counter-increment: section;
+    content: "Section" counter(section) ":";
+
+}
+</style>
+</head>
+<body>
+    <h1>CSS Counters </h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JAVASCRIPT</h2>
+    <h2>BOOTSTRAP</h2>
+</body>
+</html>
+<!--
+CSS counters are "variables" maintained by CSS whose values can be incremented 
+by CSS rules (to track how many times they are used). Counters let you adjust the
+ appearance of content based on its placement in the document.
+
+counter-reset - Creates or resets a counter
+counter-increment - Increments a counter value
+content - Inserts generated content
+counter() or counters() function - Adds the value of a counter to an element
+    
+-->
