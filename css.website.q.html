@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css IPL website</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+    .header {
+        padding: 140px;
+        background-image: url(ipl.jpg);
+        object-fit: cover;
+        font-size: 40px;
+
+    }
+    .nav{
+        background-color: coral;
+        overflow: hidden;
+    }
+    .nav a {
+        color: black;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 25px;
+    }
+    nav.a :hover{
+        background-color: #ddd;
+        color: black;
+    }
+    .column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  background-image: repeating-linear-gradient(yellow,orange,green,blue,red);
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+    background-image: repeating-linear-gradient(red,blue);
+    color: black;
+    text-shadow: 2px 2px 3px rgb(235, 127, 5);
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <h1>WEBSITE</h1>
+    <div class="header">
+        <h2></h2>
+    </div>
+    <div class="nav">
+        <a href="#">POINTS TABLE</a>
+        <a href="#">MATCHES</a>
+        <a href="#">PREDICTION</a>
+    </div>
+    <h3>TOP TEAMS</h3>
+    <div class="row">
+        <div class="column">
+            <h1 style="text-align: center;">RCB</h1>
+            <p>Royal Challengers Bangalore are a professional franchise cricket team based in Bengaluru,
+         Karnataka, that plays in the Indian Premier League. It was founded in 2008 by United Spirits
+          and named after the company's liquor brand Royal Challenge.</p>
+        </div>
+        <div class="column">
+            <h1 style="text-align: center;">CSK</h1>
+            <p>Chennai Super Kings is a professional cricket franchise based in Chennai, Tamil Nadu, India,
+         that competes in the Indian Premier League. Founded in 2008, the team plays its home matches at the
+          M. A. Chidambaram Stadium in Chennai.</p>
+        </div>
+        <div class="column">
+            <h1 style="text-align: center;">MI</h1>
+            <p>Mumbai Indians are a professional franchise cricket team based in Mumbai, Maharashtra, 
+        that competes in the Indian Premier League. Founded in 2008, the team is owned by India's 
+        biggest conglomerate, Reliance Industries, through its 100% subsidiary Indiawin Sports.</p>
+        </div>
+    </div>
+</body>
+</html>
