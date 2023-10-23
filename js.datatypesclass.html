@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <script>
+        const person = {
+            name : "Dhanush",
+            age : 22,
+            sport : "Cricket"
+
+        };
+
+        document.getElementById("demo1").innerHTML =person.name + " is " +person.age + " years old.And he loves " +person.sport+".";
+
+        document.getElementById("demo2").innerHTML = 
+        typeof 0 + "<br>" + 
+        typeof "ch" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof (3) + "<br>" +
+        typeof (3 + 4);
+    </script>
+    
+</body>
+</html>
