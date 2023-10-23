@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+​<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="demo"></p>
+​<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+let x = 16 + 4 + "Volvo";
+document.getElementById("demo").innerHTML = x;
+let y;         // Now x is undefined
+y = 5;         // Now x is a Number
+y = "John";    // Now x is a String
+
+document.getElementById("demo2").innerHTML = y;
+
+let carName1 = "Volvo XC60";
+let carName2 = 'Volvo XC40';
+
+document.getElementById("demo3").innerHTML =
+carName1 + "<br>" + 
+carName2; 
+
+
+const cars = ["Saab","Rolls-Royce","BMW"];
+
+document.getElementById("demo4").innerHTML = cars[1];
+</script>
+​
+</body>
+</html>
+<!--
+
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date
+
+-->
