@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo1"></p>
+
+<script>
+    //// Create an Array:
+    const cars  =["ferrari","fortuner","nexon"];
+
+    // Change an element:
+    cars[0]="lamborgini";
+
+    // Add an element:
+
+    cars.push("audi");
+    document.getElementById("demo1").innerHTML = cars;
+
+    //Constant Objects
+    //You can change the properties of a constant object:
+</script>
+ 
+
+    
+</body>
+</html>
+
+<!--
+
+The keyword const is a little misleading.
+
+It does not define a constant value. It defines a constant reference to a value.
+
+Because of this you can NOT:
+
+Reassign a constant value
+Reassign a constant array
+Reassign a constant object
+But you CAN:
+
+Change the elements of constant array
+Change the properties of constant object
+
+-->
