@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js.objects</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+<script>
+    let car="ferrari";
+    document.getElementById("demo1").innerHTML = car; 
+
+    const cars = {type:"Fiat", model:"500", color:"white"};
+  
+  document.getElementById("demo2").innerHTML = "The car type is " + cars.type + " of model " +cars.model +" with " +cars.color +" colour. ";
+</script>
+<script>
+    const carsz = {type:"Tata", models:"Nexon", colors:"Green"};
+  
+  document.getElementById("demo3").innerHTML = "The car type is " + carsz.type + " of model " +carsz.models +" with " +carsz.colors +" colour. ";
+
+</script>
+
+</body>
+</html>
+<!--
+    Objects are variables too. But objects can contain many values.
+
+This code assigns many values (Fiat, 500, white) to a variable named car:
+-->

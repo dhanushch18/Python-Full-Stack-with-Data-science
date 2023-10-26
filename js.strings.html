@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        let text = "John Doe";  // String written inside quotes
+        document.getElementById("demo1").innerHTML = text;
+        
+
+
+let carName1 = "Volvo XC60"; // Double quotes
+let carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo2").innerHTML =
+carName1 + " <br> <br>" + carName2; 
+
+let texts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo3").innerHTML = "The no. of alphabets are " +texts.length;
+
+
+let x = "John";
+
+// y is an object
+let y = new String("John");
+
+document.getElementById("demo4").innerHTML =
+typeof x + "<br>" + typeof y;
+
+    </script>
+</body>
+</html>
+
+<!--
+
+Code	Result
+\b	Backspace
+\f	Form Feed
+\n	New Line
+\r	Carriage Return
+\t	Horizontal Tabulator
+\v	Vertical Tabulator
+
+-->
