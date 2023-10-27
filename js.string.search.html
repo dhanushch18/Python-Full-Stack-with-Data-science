@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+document.getElementById("demo").innerHTML = index; 
+let index1 = text.lastIndexOf("locate");
+document.getElementById("demo1").innerHTML =index1;
+
+let text2 = "The rain in SPAIN stays mainly in the plain";
+const myArr = text2.match("ain");
+document.getElementById("demo2").innerHTML = myArr.length + " " + myArr;
+
+const text3 = "The rain in SPAIN stays mainly in the plain"; 
+const myArr1 = text3.match("/ain/gi");
+document.getElementById("demo3").innerHTML = myArr1.length + " " + myArr1;
+</script>
+
+</body>
+</html>
