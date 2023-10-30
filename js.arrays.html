@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button onclick="func()">Try it</button>
+    <p id="demo6"></p>
+    <script>
+        const cars=["BMW","Volvo","BENZ"];
+        document.getElementById("demo").innerHTML=cars;
+        const car = new Array("Saab", "Volvo", "BMW");
+        document.getElementById("demo1").innerHTML = car;
+        document.getElementById("demo2").innerHTML = car[2];
+        let size = cars.length;
+        document.getElementById("demo3").innerHTML = size;
+
+
+        const fruits=["apple","mango","grapes"];
+        document.getElementById("demo6").innerHTML=fruits;
+
+        function func() {
+  fruits[fruits.length] = "Lemon";
+  document.getElementById("demo6").innerHTML = fruits;
+}
+
+        
+    </script>
+</body>
+</html>
