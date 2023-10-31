@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <button onclick="func1(x,y)">Multiply</button>
+    <button onclick="func2(x,y)">Divide</button>
+<script>
+    let x=12;
+    let y=10;
+    let result=func1(12,10);
+    document.getElementById("demo").innerHTML="First num :-" +x;
+    document.getElementById("demo1").innerHTML="Second num :- " +y;
+
+    function func1(x,y){
+    return x*y;
+    document.getElementById("demo2").innerHTML="Result :-" +result;
+    }
+
+    function func2(x,y){
+    return x/y;
+    document.getElementById("demo2").innerHTML="Result :-" +result;
+    }
+</script>
+</body>
+</html>

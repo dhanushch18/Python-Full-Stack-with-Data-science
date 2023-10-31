@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="func1()">Sort alphabetically </button>
+    <button onclick="func2()">Sort Reverse </button>
+    <p id="demo1"></p>
+
+<script>
+    const names=["cr7","vk18","abd","gayle"];
+    document.getElementById("demo1").innerHTML=names
+
+    function func1() {
+        names.sort();
+        document.getElementById("demo1").innerHTML=names;
+    }
+    function  func2() {
+        names.reverse();
+        document.getElementById("demo1").innerHTML=names;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+const number = [45, 4, 9, 16, 25];
+let sum = number.reduce(myFunction);
+
+document.getElementById("demo2").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+</script>
+</body>
+</html>
