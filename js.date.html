@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo5"></p>
+    <script>
+
+        //JavaScript counts months from 0 to 11:
+
+        //January = 0.
+
+        //December = 11
+        //7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+
+        const d= new Date();
+        document.getElementById("demo").innerHTML=d;
+
+        const b = new Date(2018, 11, 24, 10, 33, 30, 0);
+        document.getElementById("demo1").innerHTML = b;
+
+        //Specifying a month higher than 11, will not result in an error but add the
+        // overflow to the next year:
+
+        const c = new Date(2018, 15, 24, 10, 33, 30, 0);
+        document.getElementById("demo2").innerHTML = c;
+
+
+        //Specifying a day higher than max, will not result in an error but add the 
+        //overflow to the next month:
+
+        let a= new Date(2019,12,35,10,33,30,0);
+        document.getElementById("demo3").innerHTML=a;
+
+
+        //<p>86400000 milliseconds from January 01 1970 UTC is:</p>
+
+
+        const z = new Date(86400000);
+        document.getElementById("demo5").innerHTML = z;
+
+    </script>
+</body>
+</html>
