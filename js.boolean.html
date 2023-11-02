@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+<script>
+        document.getElementById("demo").innerHTML=Boolean (10>9);
+
+    document.getElementById("demo1").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+
+
+document.getElementById("demo2").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+
+</script>
+</body>
+</html>
+
+<!--
+
+perator	Description	Example
+==	equal to	if (day == "Monday")
+>	greater than	if (salary > 9000)
+<	less than	if (age < 18)
+
+-->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button onclick="document.getElementById('demo3').innerHTML=integer(0,10)">Click me</button>
+
+    <script>
+        document.getElementById("demo").innerHTML=Math.random();
+
+        //Math.random() used with Math.floor() can be used to return random integers.
+
+        document.getElementById("demo1").innerHTML=Math.floor(Math.random() * 10);
+
+        // Returns a random integer from 0 to 99:
+
+        document.getElementById("demo2").innerHTML=Math.floor(Math.random() * 100);
+
+        function integer(min,max) {
+            return Math.floor(Math.random()*(max-min))+min;
+        }
+
+    </script>
+</body>
+</html>
+<!--
+    Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+-->

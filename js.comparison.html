@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p><br>
+    <p id="demo6"></p>
+
+    <input id="age" value="18">
+    <button onclick="func()">Try it</button><br><br><br>
+
+    <input id="age1" value="18">
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        let x=17;
+        document.getElementById("demo").innerHTML=(x==7);
+        document.getElementById("demo1").innerHTML=(x==17);
+        document.getElementById("demo2").innerHTML=(x>8);
+        document.getElementById("demo3").innerHTML=(x<8);
+        
+
+        function func() {
+            let age=document.getElementById("age").value;
+            let votable = (age < 18 ) ? "Too young":"Old enough";
+            document.getElementById("demo4").innerHTML=votable +" to vote.";
+        }
+
+
+        function myFunction() {
+            let voteable;
+            let age1 = Number(document.getElementById("age1").value);
+        if (isNaN(age1)) {
+            voteable = "Input is not a number";
+        } 
+        else {
+            voteable = (age1 < 18) ? "Too young" : "Old enough";
+        }
+            document.getElementById("demo6").innerHTML = voteable + " to vote";
+}
+    </script>
+</body>
+</html>
+<!--
+
+Operator	Description	Comparing	Returns	Try it
+==	equal to	x == 8	false	
+x == 5	true	
+x == "5"	true	
+===	equal value and equal type	x === 5	true	
+x === "5"	false	
+!=	not equal	x != 8	true	
+!==	not equal value or not equal type	x !== 5	false	
+x !== "5"	true	
+x !== 8	true	
+>	greater than	x > 8	false	
+<	less than	x < 8	true	
+>=	greater than or equal to	x >= 8	false	
+<=	less than or equal to	x <= 8	true
+
+-->

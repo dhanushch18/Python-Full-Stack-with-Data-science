@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript if .. else</h2>
+
+    <p>A time-based greeting:</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+    </script>
+</body>
+</html>
+<!--
+
+Conditional statements are used to perform different actions based on different conditions.
+
+Conditional Statements
+Very often when you write code, you want to perform different actions for different decisions.
+
+You can use conditional statements in your code to do this.
+
+In JavaScript we have the following conditional statements:
+
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+The switch statement is described in the next chapter.
+
+-->
