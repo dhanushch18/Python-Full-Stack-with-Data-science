@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const sports=["Cricket","Football","Hockey","Basketball","Baseball"];
+
+        let text="";
+        for(let i=0; i < sports.length;i++){
+            text += sports[i] + "<br>"
+        }
+
+        document.getElementById("demo").innerHTML=text;
+
+        let text1 = "";
+
+for (let i = 0; i < 5; i++) {
+  text1 += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo1").innerHTML = text1;
+    </script>
+</body>
+</html>
+
+<!--
+
+Different Kinds of Loops
+JavaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+for/of - loops through the values of an iterable object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true
+
+-->
