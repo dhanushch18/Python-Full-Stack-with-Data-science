@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        The While Loop
+The while loop loops through a block of code as long as a specified condition is true.
+    -->
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+let j = 0;
+let text1 = "";
+for (;cars[j];) {
+  text1 += cars[j] + "<br>";
+  j++;
+}
+
+document.getElementById("demo1").innerHTML = text1;
+</script>
+
+</body>
+</html>

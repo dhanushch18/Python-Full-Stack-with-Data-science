@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Looping over an Array</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const cars=["BMW","BENZ","AUDI"];
+
+        let text ="";
+        for (let x of cars ) {
+
+            text += x +"<br>";
+        document.getElementById("demo").innerHTML=text;
+        }
+
+        //Looping over a String
+
+        let language = "JavaScript";
+
+        let text1 = "";
+        for (let y of language) {
+        text1 += y + "<br>";
+        }
+
+        document.getElementById("demo1").innerHTML = text1;
+    </script>
+</body>
+</html>
+
+<!--
+
+    The For Of Loop
+The JavaScript for of statement loops through the values of an iterable object.
+
+It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+
+-->
