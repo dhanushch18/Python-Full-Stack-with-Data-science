@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const person = {fname:"John", lname:"Doe", age:25}; 
+
+        let txt = "";
+        for (let x in person) {
+        txt += person[x] + " ";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+
+
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt1 = "";
+        for (let y in numbers) {
+        txt1 += numbers[y] + "<br>"; 
+        }
+
+        document.getElementById("demo1").innerHTML = txt1;
+
+    </script>
+</body>
+</html>
+<!--
+    The For In Loop
+The JavaScript for in statement loops through the properties of an Object:
+-->
