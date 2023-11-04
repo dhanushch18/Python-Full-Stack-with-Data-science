@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+document.getElementById("demo1").innerHTML = fruits.size;
+</script>
+</body>
+</html>
+<!--
+
+A Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+
+Method	Description
+new Map()	Creates a new Map
+set()	Sets the value for a key in a Map
+get()	Gets the value for a key in a Map
+delete()	Removes a Map element specified by the key
+has()	Returns true if a key exists in a Map
+forEach()	Calls a function for each key/value pair in a Map
+entries()	Returns an iterator with the [key, value] pairs in a Map
+Property	Description
+size	Returns the number of elements in a Map
+
+
+
+	Object	Map
+Iterable	Not directly iterable	Directly iterable
+Size	Do not have a size property	Have a size property
+Key Types	Keys must be Strings (or Symbols)	Keys can be any datatype
+Key Order	Keys are not well ordered	Keys are ordered by insertion
+Defaults	Have default keys	Do not have default keys
+-->

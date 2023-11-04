@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo4"></p>
+
+    <script>
+        const letters =new Set(["a","b","c","d"]);
+
+        document.getElementById("demo").innerHTML=letters.size;
+
+        // Create a Set
+        const letterz = new Set();
+
+        // Add values to the Set
+        letterz.add("a");
+        letterz.add("b");
+        letterz.add("c");
+        letterz.add("c");
+        letterz.add("c");
+        letterz.add("c");
+        letterz.add("c");
+        letterz.add("c");
+
+        // Display set.size
+        document.getElementById("demo1").innerHTML = letterz.size;
+
+
+        // Create a Set
+        const letter = new Set(["a","b","c"]);
+
+        // List all Elements
+        let text3 = "";
+        for (const z of letter.values()) {
+        text3 += z + "<br>";
+        }
+
+        document.getElementById("demo4").innerHTML = text3;
+    </script>
+
+
+</body>
+</html>
+
+<!--
+A JavaScript Set is a collection of unique values.
+
+Each value can only occur once in a Set.
+
+Method	Description
+new Set()	Creates a new Set
+add()	Adds a new element to the Set
+delete()	Removes an element from a Set
+has()	Returns true if a value exists in the Set
+forEach()	Invokes a callback for each element in the Set
+values()	Returns an iterator with all the values in a Set
+Property	Description
+size	Returns the number of elements in a Set
+
+
+-->

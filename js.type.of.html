@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"'John' is " + typeof "John" + "<br>" +
+"3.14 is " + typeof 3.14 + "<br>" +
+"NaN is " + typeof NaN + "<br>" +
+"false is " + typeof false + "<br>" +
+"[1, 2, 3, 4] is " + typeof [1, 2, 3, 4] + "<br>" +
+"{name:'John', age:34} is " + typeof {name:'John', age:34} + "<br>" +
+"new Date() is " + typeof new Date() + "<br>" +
+"function () {} is " + typeof function () {} + "<br>" +
+"myCar is " + typeof myCar + "<br>" +
+"null is " + typeof null;
+</script>
+</body>
+</html>
+<!--
+In JavaScript there are 5 different data types that can contain values:
+
+string
+number
+boolean
+object
+function
+There are 6 types of objects:
+
+Object
+Date
+Array
+String
+Number
+Boolean
+And 2 data types that cannot contain values:
+
+null
+undefined
+
+-->

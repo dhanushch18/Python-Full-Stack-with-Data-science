@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+<script>
+    // Create a String
+const name = "W3Schools";
+
+// List all Elements
+let text = ""
+for (const x of name) {
+  text += x + "<br>";
+}
+
+
+
+// Create aa Array
+const letters = ["a","b","c"];
+
+// List all Elements
+let text1 = "";
+for (const y of letters) {
+  text1 += y + "<br>";
+
+
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// List all entries
+let text2 = "";
+for (const z of fruits) {
+  text2 += z + "<br>";
+}
+
+document.getElementById("demo2").innerHTML = text2;
+}
+
+document.getElementById("demo").innerHTML = text;
+document.getElementById("demo1").innerHTML = text1;
+</script>
+</body>
+</html>
+
+<!--
+
+Iterables are iterable objects (like Arrays).
+
+Iterables can be accessed with simple and efficient code.
+
+Iterables can be iterated over with for..of loops.
+
+Iterating is easy to understand.
+
+It simply means looping over a sequence of elements.
+
+-->

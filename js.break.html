@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        let text="";
+        for (let i=0; i<10;i++){
+            if (i===5){break;}
+            text +="The num is " +i +"<br>"
+        }
+        document.getElementById("demo").innerHTML=text;
+
+
+        //The continue statement breaks one iteration (in the loop), 
+        //if a specified condition occurs, and continues with the next iteration in the loop.
+
+        let text1="";
+        for (let j=0; j<10;j++){
+            if (j===5){continue;}
+            text1 +="The num is " +j +"<br>"
+        }
+        document.getElementById("demo1").innerHTML=text1;
+
+
+
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        let text2 = "";
+
+        list: {
+        text2 += cars[0] + "<br>"; 
+        text2 += cars[1] + "<br>"; 
+        break list;
+        text2 += cars[2] + "<br>"; 
+        text2 += cars[3] + "<br>"; 
+        }
+
+        document.getElementById("demo2").innerHTML = text2;
+    </script>
+</body>
+</html>
+<!--
+    The break statement "jumps out" of a loop.
+
+The continue statement "jumps over" one iteration in the loop.
+You have already seen the break statement used in an earlier chapter of this tutorial. 
+It was used to "jump out" of a switch() statement.
+The break statement can also be used to jump out of a loop:
+The break and the continue statements are the only JavaScript statements that can "jump out of" a code block.
+The continue statement (with or without a label reference) can only be used to skip one loop iteration.
+The break statement, without a label reference, can only be used to jump out of a loop or a switch.
+
+-->
