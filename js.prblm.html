@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    First Digit : <input type="text" name="num1"><br>
+    Second Digit : <input type="text" name="num2"><br>
+    Third Digit : <input type="text" name="num3"><br>
+
+    <input type="button" id="high" value="high" onclick="high()">
+    <input type="text" id="avg">
+
+    <p id="result"></p>
+
+   <script> function high() {
+        let num1 = document.getElementsByName("num1")[0].value;
+        let num2 = document.getElementsByName("num2")[0].value;
+        let num3 = document.getElementsByName("num3")[0].value;
+
+        var avg = Math.max(Number(num1),Number(num2),Number(num3))
+
+        document.getElementById("result").innerHTML="The largest num is " +avg;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="text" name="x" id="x"><br><br>
+    <input type="text" name="y" id="y"><br><br>
+    <input type="text" name="z" id="z"><br><br>
+    <script>
+    let x=5;
+    let y=4;
+    let z=1;
+
+        if (x>y & x>z) {
+            print="X greather than y and z."
+        }
+        if (y>x & y>z) {
+            print="Y is greather than x and z."
+        }
+        else{
+            print="Z is greather than y and x."
+        }
+        document.getElementById("demo").innerHTML=print;
+    </script>
+</body>
+</html>

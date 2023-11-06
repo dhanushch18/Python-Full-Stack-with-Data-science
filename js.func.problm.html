@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo5"></p>
+    X=<input type="text" name="x" id="x"><br><br>
+    Y=<input type="text" name="y" id="y"><br><br>
+    Z=<input type="text" name="z" id="z"><br><br>
+    <button type="button" onclick="document.getElementById('demo5').innerHTML>Submit</button>
+
+<script>
+
+        function func(x,y,z){
+            document.getElementById("demo").innerHTML=x;
+            document.getElementById("demo1").innerHTML=y;
+            document.getElementById("demo2").innerHTML=z;
+        }
+        if (x>y & x>z) {
+            print="X greather than y and z."
+        }
+        if (y>x & y>z) {
+            print="Y is greather than x and z."
+        }
+        else{
+            print="Z is greather than y and x."
+        }
+        document.getElementById("demo3").innerHTML=print;
+
+        
+</script>
+</body>
+</html>
