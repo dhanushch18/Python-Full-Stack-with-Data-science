@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn("3500");
+        });
+    });
+</script>
+<body>
+    <button>Click to fade in boxes.</button><br><br><br>
+    <div id="div1"  style="width: 80px;height: 80px; display: none; background-color: red;"></div><br>
+    <div id="div2"  style="width: 80px; height: 80px; display: none; background-color: rgb(28, 112, 7)"></div><br>
+    <div id="div3"  style="width: 80px; height: 80px; display: none; background-color: rgb(17, 0, 255);"></div>
+</body>
+</html>
+<!--
+    jQuery fadeIn()
+Demonstrates the jQuery fadeIn() method.
+
+jQuery fadeOut()
+Demonstrates the jQuery fadeOut() method.
+
+jQuery fadeToggle()
+Demonstrates the jQuery fadeToggle() method.
+
+jQuery fadeTo()
+Demonstrates the jQuery fadeTo() method.
+
+jQuery Fading Methods
+With jQuery you can fade an element in and out of visibility.
+
+jQuery has the following fade methods:
+
+fadeIn()
+fadeOut()
+fadeToggle()
+fadeTo()
+jQuery fadeIn() Method
+The jQuery fadeIn() method is used to fade in a hidden element.
+-->
