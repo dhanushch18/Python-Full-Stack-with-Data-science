@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").append("<br>dhanu")
+            });
+            $("#btn2").click(function(){
+                $("ol").append("<li>RCB</li>")
+            });
+            $("#btn3").click(function(){
+                $("p").prepend("<br>ch17")
+            });
+            $("#btn4").click(function(){
+                $("ol").prepend("<li>KBFC</li>")
+            });
+        })
+    </script>
+    <p>Dhanush</p><br>
+    <p>Ch17dhanush</p><br>
+
+    <ol>
+        <li>Virat</li>
+        <li>Cr7</li>
+        <li>ch17</li>
+    </ol>
+    <button id="btn1">Append Text</button>
+    <button id="btn2">Append List</button>
+    <button id="btn3">Prepend Text</button>
+    <button id="btn4">Prepend List</button>
+</body>
+</html>
+
+<!--
+    jQuery prepend() Method
+The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.
+
+jQuery append() Method
+The jQuery append() method inserts content AT THE END of the selected HTML elements.
+-->
