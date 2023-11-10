@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    .important {
+      font-weight: bold;
+      font-size: xx-large;
+    }
+    
+    .blue {
+      color: blue;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1,h2,p").addClass("blue");
+            $("div").addClass("important");
+
+        });
+    });
+
+</script>
+<body>
+    <h1>ch17dhan7ush</h1>
+    <h2>ch17</h2>
+    <p>dhanu</p>
+    <div>I'm from Kannur.</div>
+    <button>Add class</button>
+</body>
+</html>
