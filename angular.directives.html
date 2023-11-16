@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="firstName='Dhanush'">
+
+        <p>Name : <input type="text" ng-model="firstName"></p> 
+        <p>My name is {{firstName}}.</p>
+    </div>
+</body>
+</html>
+
+<!--
+
+AngularJS lets you extend HTML with new attributes called Directives.
+
+AngularJS has a set of built-in directives which offers functionality to your applications.
+
+AngularJS also lets you define your own directives.
+
+AngularJS Directives
+AngularJS directives are extended HTML attributes with the prefix ng-.
+
+The ng-app directive initializes an AngularJS application.
+
+The ng-init directive initializes application data.
+
+The ng-model directive binds the value of HTML controls (input, select, textarea) to
+ application data.
+
+Data Binding
+The {{ firstName }} expression, in the example above, is an AngularJS data binding expression.
+
+Data binding in AngularJS binds AngularJS expressions with AngularJS data.
+
+{{ firstName }} is bound with ng-model="firstName".
+
+-->

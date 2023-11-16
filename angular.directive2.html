@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div data-ng-app="" data-ng-init="quantity=1;price=5">
+        <h1>Cost Calculator</h1>
+        Quantity : <input type="number" ng-model="quantity">
+        Price : <input type="number" ng-model="price">
+
+        <p><b>Total in Dollar:</b> {{ quantity * price}}</p>
+    </div>
+</body>
+</html>
+
+<!--
+    
+
+Data Binding
+The {{ firstName }} expression, in the example above, is an AngularJS data binding expression.
+
+Data binding in AngularJS binds AngularJS expressions with AngularJS data.
+
+{{ firstName }} is bound with ng-model="firstName".
+
+
+-->
