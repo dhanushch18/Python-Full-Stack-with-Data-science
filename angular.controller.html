@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1 ng-click="changeName()">{{firstname}}</h1>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.firstname = "John";
+            $scope.changeName = function() {
+                $scope.firstname = "Nelly";
+            }
+        });
+        </script>
+        
+        <p>Click on the header to run the "changeName" function.</p>
+        
+        <p>This example demonstrates how to use the controller to change model data.</p>
+        
+</body>
+</html>
+
+<!--
+
+AngularJS controllers control the data of AngularJS applications.
+
+AngularJS controllers are regular JavaScript Objects.
+
+AngularJS Controllers
+AngularJS applications are controlled by controllers.
+
+The ng-controller directive defines the application controller.
+
+A controller is a JavaScript Object, created by a standard JavaScript object constructor.
+-->
