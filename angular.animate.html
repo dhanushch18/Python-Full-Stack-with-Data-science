@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+      transition: all linear 0.5s;
+      background-color: lightblue;
+      height: 100px;
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    
+    .ng-hide {
+      height: 0;
+      width: 0;
+      background-color: transparent;
+      top:-200px;
+      left: 200px;
+    }
+    
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+<body ng-app="ngAnimate">
+<h1>Hide the DIV: <input type="checkbox" ng-model="myCheck"></h1>
+
+<div ng-hide="myCheck"></div>
+
+</body>
+
+</html>
+
+<!--
+The ngAnimate module adds and removes classes.
+
+The ngAnimate module does not animate your HTML elements, but when ngAnimate notice certain events, like hide or show of an HTML element, the element gets some pre-defined classes which can be used to make animations.
+
+The directives in AngularJS who add/remove classes are:
+
+ng-show
+ng-hide
+ng-class
+ng-view
+ng-include
+ng-repeat
+ng-if
+ng-switch
+The ng-show and ng-hide directives adds or removes a ng-hide class value.
+
+The other directives adds a ng-enter class value when they enter the DOM, and a ng-leave attribute when they are removed from the DOM.
+
+The ng-repeat directive also adds a ng-move class value when the HTML element changes position.
+
+In addition, during the animation, the HTML element will have a set of class values, which will be removed when the animation has finished. Example: the ng-hide directive will add these class values:
+
+ng-animate
+ng-hide-animate
+ng-hide-add (if the element will be hidden)
+ng-hide-remove (if the element will be showed)
+ng-hide-add-active (if the element will be hidden)
+ng-hide-remove-active (if the element will be showed)
+
+-->
