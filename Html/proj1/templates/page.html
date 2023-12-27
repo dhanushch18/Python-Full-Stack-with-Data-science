@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+<style>
+ {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+<h>html</h>
+
+<header>India</header>
+<section>
+    <nav>
+        <ul>
+            <li>Kerala</li>
+            <li>Tamil Nadu</li>
+            <li>Karnataka</li>
+        </ul>
+    </nav>
+    <article>
+        <h1><i>Kerala</i></h1>
+        <p><mark>Kerala</mark>, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline.
+            It's known for its palm-lined beaches and backwaters, a network of canals.
+            Inland are the Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well
+            as wildlife. National parks like Eravikulam and Periyar, plus Wayanad and other sanctuaries,
+            are home to elephants, langur monkeys and tigers.</p>
+    </article>
+</section>
+
+<footer>
+    <a href="https://www.google.com/search?q=kerala&sca_esv=593908511&rlz=1C1FKPE_enIN1005IN1005&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjU48eJ8K6DAxV8yjgGHR_fDd4Q_AUoA3oECAQQBQ&biw=1440&bih=739&dpr=1#imgrc=7RUIE9OzaBpfrM">About</a>
+</footer>
+
+</body>
+</html>
