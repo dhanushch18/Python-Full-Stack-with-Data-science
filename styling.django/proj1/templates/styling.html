@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+</head>
+<body>
+<div class="ind">
+<h1>INDIA</h1>
+<p>India, officially the Republic of India, is a country in South Asia.
+    It is the seventh-largest country by area; the most populous country as of June 2023;
+    and from the time of its independence in 1947, the world's most populous democracy.</p>
+<img src="{% static 'india.jpg' %}">
+</div>
+<div class="spi">
+    <h1>SPIDERMAN</h1>
+    <p>Spider-Man is a superhero appearing in American comic books published by Marvel Comics.
+        Created by writer-editor Stan Lee and artist Steve Ditko, he first appeared in the anthology
+        comic book Amazing Fantasy #15 in the Silver Age of Comic Books.</p>
+<img src="{% static 'spiderman.jpg' %}">
+</div>
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</body>
+</html>

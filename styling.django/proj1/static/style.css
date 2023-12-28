@@ -1,0 +1,30 @@
+body{
+background-color:cyan;
+}
+.ind{
+padding : 10px;
+margin: 2px;
+background-image:linear-gradient(red, yellow, green);
+
+color:black;
+
+
+}
+.spi{
+padding:10px;
+background-image:linear-gradient(red, yellow, green);
+}
+
+h1{
+text-align:center;
+font-size:30px;
+}
+
+p {
+font-size:20px;
+}
+img{
+width:250px;
+text-align:center;
+justify-content:center;
+}
