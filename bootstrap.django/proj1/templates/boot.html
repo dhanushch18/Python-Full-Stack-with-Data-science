@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+{%for x in img %}
+<div class="container">
+  <h2>ABD Card Image Overlay</h2>
+  <p>Turn an image into a card background and use .card-img-overlay to overlay the card's text:</p>
+  <div class="card img-fluid" style="width:700px">
+    <img class="card-img-top" src="{{ x.image.url }}" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title text-primary">AB De VILLERS</h4>
+      <p class="card-text text-danger"> Abraham Benjamin de Villiers is a South African former international cricketer, and a current commentator.
+        AB de Villiers was named as the ICC ODI Player of the Year three times during his 15-year international career and
+        was one of the five Wisden cricketers of the decade at the end of 2019.</p>
+      <a href="https://www.google.com/search?q=ABD&rlz=1C1FKPE_enIN1005IN1005&oq=ABD&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQLhiDARixAxiABDIKCAIQLhixAxiABDIQCAMQLhiDARixAxiABBiKBTIHCAQQABiABDINCAUQLhiDARixAxiABDINCAYQABiDARixAxiABDIHCAcQABiABDIHCAgQABiPAjIHCAkQABiPAtIBCDQ5MTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&si=ALGXSlZhnnn5ZK6hp5VTx8jNVfJsvPhErPZpfOCo2i3PyuQQ8xXzkdg2HzFzkyJzbkQVAesChEg1X6fnZHt8wNScDTUfnw45cyHrpEdGIwBwVUv4Yx9zxgRr1p0r08QObn_3vG-pqOtAzU7MoIkfGSvN4V7SYyWnIAMEUbUmcOyYrE6aLFX6nPT3tERuLgVXEkx30EBB4XsFQwmhOf_KPGmgEeEzO1Eu1IQcGYovjqRW1BY2lhc7XXDdV00kWzgngS4slSVqXBDCWKIXbeyn0aJVpsXocJSoa2VYmU8ZHqORDTYQ4QqETltLUD6IaRiQ33Tn5si1f0v-MOQPZXYTYHxuIRh8yJ1OsLBaPNNWAhYgq45tsGFUMJUFnMtbd9wKg7kaMamW4cRPInanO-y90jvrPj6qsQUK7MtiSoLlBMgqXWFMMp-vwd22bJxu04X6I76x30mTrc7eq7whQnv9gdcUCVxfbvkUm0KfVd2mLucSbDxpplcFWHvBFSqONRooCRXfAIXw8fyZl9vtW-7JrKHQQv7YUNmV_pQte_gGHBh5wUrVBfIWiLh-Fdg1XLDGeD2EwNEyFlOC0XNGbPAWE9gWZMSPanfYGOZCjBrOWqHrH3yFRgAgQNvJNKkPw-rzh6jN3rfxmRhZnuNatj_4iUGdVMifr4MqofCyq03uuQTj1Lf3I3ZkzczEp_2oW4sdFaC05WAPWWy38PpiX923mudOjleDIug5qCXcBmS5q8PZ09TopkjgKkBSx695jsm8RDI-N5vaioViDvdO9rMMs2fHM6JMxMwWhh1VVGPdva8r3pfFHXIzrYu6IPRNk34L10yoJ_590ZcAoM4qZV914p1d2x0JmND2_wT74JKreqtH2KO3pTDewX3urbl6ryyoSdrNSn-tNGknKsDRXjClaplGYc8wMi67VIP7q1Z-NNCKhV0lAuKamzABUeHoiSHMyNF45juCEB8BVy-yeFvQLDKRUJvrLUXob5J8V7ofQoKau7tkBwR9SDHCWvclRHWL00TEKynrGQI318Zab99M_eqK_A4JcU-2blk6maEbG7JJDx5u0WDgHKGlovxO6UTfVOWlpfSfBR-1_G2iXxMNI2EaGOyrrNCkLTdu_n-ftJhW_lV--gbC5s4mzK1I8Hu_XG3jDfdxNqZpDfX2tIBDMoLLP2QSB-BG1UVMX6iWBXKzfrrX3eBQ7WB7TFtRZCcd_ui0dJR3CKxq81kPUp2aNRPEyK6w3HQkqngVhdY7woY6LCOd5sjFVPeX-hhdYbXfzIWDZT2t4LBM0_XnT0gWVNrcmydgEviTeg9xgfj52eQAoGXXMlOtlpAK-aqiKaRd1j2UYBYP_edkiNtIlv4PjkDDS3akEDG_JqNSCDaovQNvo13MVv48ehkB8SpTgqWklQnbFTuzwUGo13zWZ_vzzHB7wbfqrAL-sAK0QNDYhq07kvEeezNz6v4lWKyBxzVBXiLY1D5nnVrlZI_9__JzaxaobtBb9ubBlS5JGMB1CvxqLBy8RS51zrEgmjKBZfvVR7fblwA9cMNmdr5pwdq_ba8Tm7tC8R0wXtsbcLngyZLy0FLv2NyP539GzQPudmXXK1yarsDRZPAzOHxheSGm3q-VP706_LKDRzFuumEU_ky4iJCpCwXKFFzhGeiPGEOI-i2TME9Q8tcDdIBWI-mhQ9Dj1xdGojK9QGIfH__ryDoSPnF1JbLaEhVvanDtpz_2XedPGReqfgHIp9jOFBI6iHwHJ43o_RtQc-bbD4a3zBWVYQIveleTx9dg8qQoTIFrJxWF3NguEQMq-3bbmk18DlktdvZGu0BxbMvXgJGHtQC_fWF6dIQPshCoBSf_5a1xg3QFzMvPs9fU5vdxAxs7aSx8By42MsvalibYH-ZwcuUsQo8zzmnG7Fwi9Q6ao1tH5u1N-iO7UoJ1pr9jg4ozOBozvKpaUMZVfMOTpt8a2ksfLjhNJFJlhSzZFqJmgf9O5mi21WL2zMxVJ5LvImoLk9ECNcz0kRY_akAsCGloNIgC8nMbW-PMFMrTi1Tib2WJnHA5MLGOubgxewgTTPm8SnglAxosv9WzbygilKF5VYs36oIgx6er-XWjF43NPYbvk--qLE3xLEhslDiYHXmbtQ39QAqY3y7RUmAFiaH8FBW-1OJSQ1VaZql7HoWszRzMOVy8riqvnWbM2lEhs_tbFuhIaNl-csd1rudz9VVM0avre-p7BbudxtR1eEM8_d1lwusVql-OpNNfSRH_eIJ7N25lAdvek1X_cWWNMr2rq10PGrpZMGs77D6BebzobiPhVjcV0QCDJKxzQAPEz7Ek5VZDQ5r4fkvNc6v-DT7FkDm9DWIDmixmw4hYCYdt2CiKzWFFueZO8xQgBZ-FqC9lqRjStc2SnerTdViHEr-YXKBVzPtKAxWCmt6LH0F4fGUarg5Beiomz79tQp3jzlCY_QtmfFcs4JSA6p04Hg88z2fDGbdTMBQ9Hk2gaZKWG4K5yN15D9p6a4zM9-0nFD28hbzOIRad1SAeRu41G3NTuZ90Mn0n4uk96ws%3D&ictx=1&ved=2ahUKEwj1zaOl6rODAxVq-TgGHbKbD-sQ_coHegQIURAB" class="btn btn-warning">{{ x.name }}</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+</body>
+</html>
