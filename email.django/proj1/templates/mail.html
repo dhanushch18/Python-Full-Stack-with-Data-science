@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>subscribe</title>
+</head>
+<body>
+
+<main>
+    <h1>Subscribe</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color:red">{{message}}</p>
+        {% endfor %}
+    {% endif %}
+    <form action="{% url 'subscribe' %}" method="POST">
+        {% csrf_token %}
+        <input type="email" name="email">
+        <input type="submit" value="submit">
+    </form>
+
+
+</main>
+</body>
+</html>
