@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+</head>
+<body>
+<div class="container">
+    <h1>Book Details</h1>
+    <table class="table table-bordered" border="1">
+        <tr>
+            <td>Title</td>
+            <td>{{instance.title}}</td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td>{{instance.author}}</td>
+        </tr>
+        <tr>
+            <td>pdf</td>
+            <td><a href="{{instance.pdf.url}}">{{instance.pdf}}</a></td>
+        </tr>
+        <tr>
+            <td>cover</td>
+            {{% if instance.cover %}
+            <td><img src="{{instance.cover.url}}" width="100px"></td>
+            {% else %}
+            <span class="text-muted">no cover</span>{% endif %}
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

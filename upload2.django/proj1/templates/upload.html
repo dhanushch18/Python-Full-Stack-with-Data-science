@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+</head>
+<body>
+<table border="1" style="width:800px">
+     <tr>
+        <td>TITLE</td>
+
+
+        <td>AUTHOR</td>
+
+
+        <td>FILE</td>
+    </tr>
+    {% for i in s%}
+    <tr>
+        <td>{{i.title}}</td>
+        <td>{{i.author}}</td>
+        <td><a href="{{i.pdf.url}}">download</a></td>
+        <td><a href="{% url 'delete_book' i.pk %}">delete</a> </td>
+        <td><a href="{% url 'view_book' i.pk %}">view</a> </td>
+        <td><a href="{% url 'edit_book' i.pk %}">edit</a> </td>
+        <td>{% if i.cover %}<img src="{{i.cover.url}}" alt="{{i.title}}" style="width:100px">{% else %}
+        <span class="text-muted">no cover</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+
+</body>
+</html>
