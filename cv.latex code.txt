@@ -1,0 +1,286 @@
+%-------------------------
+% Resume in Latex
+% Author: Dhanush CH
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{sf}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\Large\color{heading}}{}{0em}{}[\color{headingrule}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+\newcommand{\resumeAchievement}[1]{\item\small{#1\vspace{-4pt}}}
+\newcommand{\techSkill}[1]{\hspace{0.1cm}$\sbullet[.75] \hspace{0.1cm}$ #1 \hspace{0.5cm}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape DHANUSH CH } \\ \vspace{4pt}
+    PYTHON FULL STACK DEVELOPER // DATA SCIENTIST // BTECH GRADUATE \\ \vspace{4pt}
+    Kannur, Kerala, India \\ \vspace{4pt}
+    \small \href{tel:+xxxxxxxxxxxx}{\raisebox{-0.1\height}\faPhone\ \underline{+91-8547950254}} \href{mailto:dhanushch1234@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dhanushch1234@gmail.com}} \href{https://www.linkedin.com/in/dhanush-ch-71195b224}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}} \href{https://github.com/dhanushch18}{\raisebox{-0.2\height}\faGithub\ \underline{https://github.com/dhanushch18}} \href{https:https://linktr.ee/dhanush_ch}{\raisebox{-0.2\height}\faHackerrank\ \underline{Linktree}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Vimal Jyothi Engineering College }{2019 --  2023}
+    {B.Tech - Electronics and Communication Engineering - \textbf{CGPA} - \textbf{7.06}}{Kannur, Kerala}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {St.Michael's AIHSS}{2017 -- 2019}
+    {Higher Secondary - Science   - \textbf{Percentage} - \textbf{81.25\%}}{Kannur, Kerala}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {St.Michael's AIHSS}{2016 -- 2017}
+    {SSLC - Kerala State Board - \textbf{Percentage} - \textbf{97.80\%}}{Kannur, Kerala}
+\resumeSubHeadingListEnd
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {RIGHT SOFT OPTIONS {\raisebox{0.5cm\height}\ }}{ 2023 --  2024} 
+    {\underline{ PYTHON FULL STACK DEVELOPER AND DATA SCIENCE}}{Kochi, Kerala}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Proven experience as a  Python  Full  Stack Developer  with  expertise in front-end and back-end technologies and Strong background in Data Science,  including data   analysis, machine learning, and statistical modeling.}}
+        \resumeItem{\normalsize{Excellent problem-solving and analytical skills and Strong communication and collaboration abilities.}}
+    \resumeItemListEnd  
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\href{https://github.com/dhanushch18/Travel-Website-Project}{\textbf{\large{\underline{Travel World Website }}} \href{https://github.com/dhanushch18/Travel-Website-Project}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, BOOTSTRAP}}}{2023}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Transformed travel  exploration  with  an  engaging  front-end, combining aesthetics and  functionality  for  a memorable user experience.}}
+        \resumeItem{\normalsize{Ensured universal accessibility and visual captivating with cross-browser compatibility and mobile responsiveness.}}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+
+    \resumeProjectHeading
+    {\href{https://github.com/dhanushch18/HR-DASHBOARD-DS-PROJECT}{\textbf{\large{\underline{HR Dashboard }}} \href{https://github.com/dhanushch18/HR-DASHBOARD-DS-PROJECT}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{POWER BI, NUMPY, PANDAS, SEABORN, MATPLOTLIB,EXCEL}}}{2024}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Visualized recruitment trends through dynamic charts, enhancing data-driven insights for   HR professionals.}}
+        \resumeItem{\normalsize{Employed advanced data wrangling techniques to clean and preprocess HR datasets, ensuring data integrity and quality.}}
+    \resumeItemListEnd
+    \vspace{-13pt}
+
+    \resumeProjectHeading
+    {\href{https://github.com/dhanushch18/MEMORY-MANIA-GAME-WEBSITE}{\textbf{\large{\underline{Memory Mania Game Website}}} \href{https://github.com/dhanushch18/MEMORY-MANIA-GAME-WEBSITE}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, JAVASCRIPT, BOOTSTRAP}}}{2023}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Developed interactive UI with visually appealing design and flip animations for engaging gameplay.}}
+        \resumeItem{\normalsize{Programmed JavaScript logic for card matching, scoring, and timer and ensured seamless gameplay across devices with responsive design principles.}}
+    \resumeItemListEnd
+    \vspace{-13pt}
+
+    \resumeProjectHeading
+    {\href{https://github.com/dhanushch18/Introduction-to-Django/tree/main/boot.card.django}{\textbf{\large{\underline{Profile Card }}} \href{https://github.com/dhanushch18/Introduction-to-Django/tree/main/boot.card.django}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{DJANGO, HTML, CSS, BOOTSTRAP}}}{2024}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Designed and Deployed a web application for users to create and manage their profiles through a visually appealing and interactive profile card.}}
+        \resumeItem{\normalsize{Implemented back-end functionality using Django for user authentication and profile management.}}
+    \resumeItemListEnd 
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \large{\item{
+        \textbf{\large{Python and Data Analytics - }}{ \large{Google Developers}} \\
+        \textbf{\large{Java Script and React JS -}}{ \large{Google Developers}} \\
+        \textbf{\large{Conceptual study on Python and Data Science}}{\large{}} \\
+        \textbf{\large{Artificial Intelligence - }}{ \large{Pacelab}} \\
+    }}
+\end{itemize}
+\vspace{-15pt}
+
+
+
+%-----------INVOLVEMENT---------------
+\section{ACHIEVEMENTS}
+\resumeSubHeadingListStart
+    \resumeAchievement{Volunteer of National Service Scheme (NSS VJEC) \href{Certificate Proof link}{\raisebox{-0.5\height}\ }}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Established strong leadership and teamwork skills through hands-on initiatives, demonstrating a proactive approach to problem-solving and community development.}}
+    \resumeItemListEnd
+    \resumeAchievement{Main Coordinator of Tech Fest Workshop on AI \href{}
+        {\raisebox{-0.1\height}\ }}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Seeking an engineering role where my dedication to social responsibility, project management, and collaboration can be effectively utilized.}}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-11pt}
+
+%-----------SKILLS---------------
+\section{TECHNICAL SKILLS}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-Pycharm}{PYTHON}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-html}{HTML}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-Javascript}{JAVASCRIPT}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-CSS}{CSS}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-Bootstrap}{BOOTSTRAP}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-React-JS}{REACT JS}}
+\techSkill{\href{https://github.com/dhanushch18}{C}}
+
+
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-JQuery}{JQUERY}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-AJAX}{AJAX}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-AngularJS}{ANGULAR JS}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-SQL}{SQL}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-MongoDB}{MONGO DB}}
+\techSkill{\href{https://github.com/dhanushch18/Introduction-to-Django}{DJANGO}}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Introduction-to-Flask}{FLASK}} \\
+
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Inroduction-to-Numpy}{{NUMPY}} \hspace{.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Intrduction-to-Pandas}{{PANDAS}} \hspace{.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Introduction-to-Seaborn}{{SEABORN}} \hspace{.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Introduction-to-Matplotlib}{{MATPLOTLIB}} \hspace{.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Introduction-to-Machine-Learning-}{MACHINE LEARNING}} \hspace{.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18}{ AI }} \\
+
+
+
+%----------- SOFTWARE/TOOLS---------------
+\section{SOFTWARE / TOOLS}
+$\sbullet[.75] \hspace{0.5cm}${\href{https://github.com/dhanushch18/Introduction-to-Pycharm}{{PYCHARM}} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.5cm}${\href{https://github.com/dhanushch18/Python-Full-Stack-with-Data-science}{{VS CODE}} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.5cm}${\href{https://github.com/dhanushch18/Python-Full-Stack-with-Data-science}{{POWER BI}} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Python-Full-Stack-with-Data-science}{{COLLAB}} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18/Python-Full-Stack-with-Data-science}{ANACONDA}} \hspace{1.1cm} \\
+
+$\sbullet[.75] \hspace{0.3cm}${\href{https://github.com/dhanushch18}{ EXCEL }} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18}{{MS POWERPOINT}} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.3cm}${\href{https://github.com/dhanushch18/Introduction-to-SQL}{{MYSQL }} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18}{{MS WORD}} \hspace{1.1cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://github.com/dhanushch18}{{MATLAB}} \hspace{1.1cm}
+
+
+\end{document}
