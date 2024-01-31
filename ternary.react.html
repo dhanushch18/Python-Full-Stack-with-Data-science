@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+<script>
+function renderApp() {
+  document.getElementById("demo").innerHTML = "Welcome!";
+}
+
+function renderLogin() {
+  document.getElementById("demo").innerHTML = "Please log in";
+}
+
+let authenticated = false;
+
+if (authenticated) {
+  renderApp();
+} else {
+  renderLogin();
+}
+
+//  authenticated ? renderApp() : renderLogin(); 
+
+</script>
+<p>Try changing the "authenticated" variable to false, and run the code to see what happens.</p>
+</body>
+</html>
+
+<!-- 
+    
+    Ternary Operator
+The ternary operator is a simplified conditional operator like if / else.
+
+Syntax: condition ? <expression if true> : <expression if false>
+
+
+-->

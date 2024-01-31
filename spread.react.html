@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Spread Operator
+The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+    -->
+
+    <script>
+
+        const num1=[1,2,3,4];
+        const num2=[4,5,6,7];
+        const numbersCombined = [...num1,...num2];
+
+
+        document.write(numbersCombined);
+    </script>
+
+    <script>
+        const numbers = [1, 2, 3, 4, 5, 6];
+
+const [one, two, ...rest] = numbers;
+
+document.write("<p>" + one + "</p>");
+document.write("<p>" + two + "</p>");
+document.write("<p>" + rest + "</p>");
+    </script>
+</body>
+</html>
