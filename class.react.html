@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aqua;
+    }
+</style>
+<body>
+    <script>
+        class Car {
+            constructor(name) {
+                this.brand=name;
+            }
+        }
+
+        const mycars = new Car("Ford,Tata");
+
+        document.write(mycars.brand);
+    </script>
+</body>
+</html>
+
+<!--
+ES6 stands for ECMAScript 6.
+
+ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in 2015, and is also known as ECMAScript 2015.
+
+Classes
+ES6 introduced classes.
+
+A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.
+-->

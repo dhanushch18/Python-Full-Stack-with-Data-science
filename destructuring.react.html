@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    function calculate(a,b) {
+        const add = a+b;
+        const sub = a-b;
+        const mult = a*b;
+        const div = a/b;
+
+        return [add,sub,mult,div];
+    }
+
+    const [add,sub,mult,div]=calculate(4,7);
+
+    document.write("<p>Sum : "+add + "</p>");
+    document.write("<p>Substraction: "+sub + "</p>");
+    document.write("<p>Multiplication : "+mult + "</p>");
+    document.write("<p>Division : "+div + "</p>");
+</script>
+
+
+
+</body>
+</html>
+<!-- 
+    Destructuring is exactly the same. We may have an array or object that we are working with, but we only need some of the items contained in these.
+
+Destructuring makes it easy to extract only what is needed.
+-->

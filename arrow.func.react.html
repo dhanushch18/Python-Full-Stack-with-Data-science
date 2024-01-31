@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+<p id="demo"></p>
+<p id="demo1"></p>
+  
+<script>
+hello = function() {
+  return "Hello World!";
+}
+
+document.getElementById("demo").innerHTML = hello();
+
+hello1 = ( ) => {
+    return "Hello World!";
+}
+document.getElementById("demo1").innerHTML=hello1();
+</script>
+
+</body>
+</html>
+
+<!-- 
+    The handling of this is also different in arrow functions compared to regular functions.
+
+In short, with arrow functions there is no binding of this.
+
+In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+
+With arrow functions, the this keyword always represents the object that defined the arrow function.
+-->
